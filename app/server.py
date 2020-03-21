@@ -9,11 +9,12 @@ from starlette.middleware.cors import CORSMiddleware
 from starlette.responses import HTMLResponse, JSONResponse
 from starlette.staticfiles import StaticFiles
 
-export_file_url = 'https://www.dropbox.com/s/6bgq8t6yextloqp/export.pkl?raw=1'
-export_file_name = 'export.pkl'
+export_file_url = 'https://www.dropbox.com/s/o4qlis4ubm6zuv7/export.pkl?dl=1'
+export_file_name = 'export'#file name only without extension!!!!!!!
 
 classes = ['black', 'grizzly', 'teddys']
 path = Path(__file__).parent
+
 
 app = Starlette()
 app.add_middleware(CORSMiddleware, allow_origins=['*'], allow_headers=['X-Requested-With', 'Content-Type'])
